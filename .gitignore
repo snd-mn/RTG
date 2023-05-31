@@ -1,0 +1,59 @@
+#nicht-der-jedi-den-du-suchst
+
+#local environment files
+RunningTheGauntlet.json
+RunningTheGauntlet.sln
+
+# No Buildfiles please
+/Target/**
+!Target/Client.bat
+!Target/Server.bat
+!Target/TestStartServer.bat
+
+# Build 
+/Build/**
+/Binaries/**
+/Intermediate/**
+/DerivedDataCache/**
+
+# Builded Maps
+*_BuiltData.uasset
+
+# packages
+/packages/**
+
+# Plugins
+#/Plugins/*/Intermediate/**
+#/Plugins/**
+/Plugins/BlockoutToolsPlugin/Intermediate
+/Plugins/BlockoutToolsPlugin/Intermediate/**
+/Plugins/BlockoutToolsPlugin/Binaries
+/Plugins/BlockoutToolsPlugin/Binaries/**
+#ide related stuff
+/.vs/**
+/.idea/**
+
+#Logs LLM files and so on
+/Saved/**
+
+###############################
+# Content-Folder
+#/Content/*
+#
+#!Content/*
+#!/Content/ThirdPerson/
+#!/Content/ThirdPersonCPP/
+#!/Content/Geometry/
+#!/Content/Mannequin/
+
+#include the Developers stuff
+#!/Content/Developers/
+#
+##exclude binary assets
+#/Content/Developers/zipmo/CharacterModels/**
+#/Content/Developers/zipmo/StaticMeshes/**
+#/Content/Developers/zipmo/Sounds/**
+#
+##todo move assets to another folder, fix redirectors, create backup for those, read best practices
+#
+#/Documentation/.~lock.Datastructures.ods#
